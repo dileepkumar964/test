@@ -1,0 +1,31 @@
+function PingStatus
+
+{
+
+echo "Enter an URL"
+
+read path
+
+count = 0
+
+while true;
+
+do
+
+  ping -c1000 $path
+
+  count=`expr $count + 1`
+
+  if [ $? -eq 0 ]
+
+  then
+
+    /root/scripts/test1.sh
+
+    return $count
+
+  fi
+
+done
+
+}

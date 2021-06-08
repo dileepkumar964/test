@@ -1,0 +1,5 @@
+local a,b, sum=0
+io.write('Hello, enter numbers A and B ')
+a,b = io.read("*n","*n")
+sum = a+b
+io.write('Sum of two numbers is: ', sum, '!\n')

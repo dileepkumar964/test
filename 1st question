@@ -1,0 +1,35 @@
+#!/bin/sh
+
+echo "Enter A value"
+
+read A
+
+echo "Enter B value"
+
+read B
+
+echo "Enter C value"
+
+read C
+
+ 
+
+if [ $A == "" ]
+
+then
+
+    echo "error A is empty"
+
+elif [ $B == "" ]
+
+then
+
+    echo "error B is empty"
+
+else
+
+    echo "error C is empty"
+
+fi
+
+ 

@@ -1,0 +1,22 @@
+docker run -it --rm -d -p 8080:80 --name web nginx
+
+FROM nginx:latest
+COPY ./index.html /usr/share/nginx/html/index.html
+
+$ docker build -t nginx .
+
+docker run -it --rm -d -p 8080:80 --name web nginx
+
+--------------------------------------------------------------------------
+
+version: '3.8'
+
+services:
+  frontend:
+    image: nginx-latest
+    build: 
+      context: 
+      args:
+        
+    ports:
+      - "80:80"
